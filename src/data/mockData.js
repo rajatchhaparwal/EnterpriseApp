@@ -1,0 +1,222 @@
+export const fallbackProducts = [
+  {
+    id: 1,
+    name: "Lipstick",
+    brand: "Kay Beauty",
+    subname: "Kay Beauty Hydra Crème Hydrating Full Coverage Lipstick with Hyaluronic Acid - Sage",
+    price: 999,
+    originalPrice: 1249,
+    discount: "20% OFF",
+    rating: 4.8,
+    reviewsCount: 3842,
+    badge: "Bestseller",
+    category: "Lipstick",
+    platform: "Amazon",
+    affiliateUrl: "https://www.amazon.in/s?k=Kay+Beauty+Hydra+Creme+Lipstick",
+    volume: "3.8g",
+    imageUrl: "https://images-static.nykaa.com/media/catalog/product/d/8/d8af9fc71249343326_1.jpg?tr=w-500,h-500,cm-pad_resize",
+    images: {
+      image1: "https://images-static.nykaa.com/media/catalog/product/d/8/d8af9fc71249343326_1.jpg?tr=w-500,h-500,cm-pad_resize",
+      image2: "https://images-static.nykaa.com/media/catalog/product/d/8/d8af9fc71249343326_2.jpg?tr=w-500,h-500,cm-pad_resize",
+      image3: "https://images-static.nykaa.com/media/catalog/product/d/8/d8af9fc71249343326_3.jpg?tr=w-500,h-500,cm-pad_resize"
+    },
+    description: "An ultra-hydrating, highly pigmented luxury lipstick infused with Hyaluronic Acid and Lychee Extract. Best price available on Amazon.",
+    benefits: [
+      "Infused with Hyaluronic Acid for deep lip hydration",
+      "One-stroke intense color payoff",
+      "Cruelty-free, 100% vegan formulation"
+    ]
+  },
+  {
+    id: 2,
+    name: "Lipstick",
+    brand: "Kay Beauty",
+    subname: "Kay Beauty Lip Tint - Juicy Berry Gloss Stain",
+    price: 809,
+    originalPrice: 999,
+    discount: "19% OFF",
+    rating: 4.7,
+    reviewsCount: 2190,
+    badge: "Trending Deal",
+    category: "Lipstick",
+    platform: "Flipkart",
+    affiliateUrl: "https://www.flipkart.com/search?q=Kay+Beauty+Lip+Tint",
+    volume: "4.5ml",
+    imageUrl: "https://images-static.nykaa.com/media/catalog/product/7/6/76790b9LOREA00000525_1.jpg?tr=w-500,h-500,cm-pad_resize",
+    description: "A lightweight water-gel lip stain that delivers juicy, radiant color with a glassy mirror shine. Best price verified on Flipkart."
+  },
+  {
+    id: 3,
+    name: "Lip Liner",
+    brand: "MARS",
+    subname: "MARS Matte Lip Liner Pack of 10 - Set A Professional Define",
+    price: 509,
+    originalPrice: 699,
+    discount: "27% OFF",
+    rating: 4.6,
+    reviewsCount: 1540,
+    badge: "Amazon's Choice",
+    category: "Lip Liner",
+    platform: "Amazon",
+    affiliateUrl: "https://www.amazon.in/s?k=MARS+Matte+Lip+Liner+Pack",
+    volume: "10 x 1.2g",
+    imageUrl: "https://images-static.nykaa.com/media/catalog/product/b/b/bb07c88MARSX00000570-280824New1.jpg?tr=w-500,h-500,cm-pad_resize",
+    description: "Complete 10-shade set ranging from nude to bold red. Highly rated on Amazon."
+  },
+  {
+    id: 4,
+    name: "Lip Liner",
+    brand: "Swiss Beauty",
+    subname: "Swiss Beauty Bold Matt Lip Liner Multicolour - Pack of 12",
+    price: 674,
+    originalPrice: 899,
+    discount: "25% OFF",
+    rating: 4.5,
+    reviewsCount: 980,
+    badge: "Flipkart Assured",
+    category: "Lip Liner",
+    platform: "Flipkart",
+    affiliateUrl: "https://www.flipkart.com/search?q=Swiss+Beauty+Bold+Matt+Lip+Liner",
+    volume: "12 x 1.4g",
+    imageUrl: "https://images-static.nykaa.com/media/catalog/product/d/f/df3e0a58904325006568_1.jpg?tr=w-500,h-500,cm-pad_resize",
+    description: "Ultra-pigmented velvet matte lip liners. Waterproof and long-lasting."
+  },
+  {
+    id: 5,
+    name: "Mascara",
+    brand: "Maybelline New York",
+    subname: "Maybelline Lash Sensational Sky High Waterproof Mascara - Very Black",
+    price: 799,
+    originalPrice: 999,
+    discount: "20% OFF",
+    rating: 4.9,
+    reviewsCount: 12450,
+    badge: "Amazon's Choice",
+    category: "Mascara",
+    platform: "Amazon",
+    affiliateUrl: "https://www.amazon.in/s?k=Maybelline+Sky+High+Mascara",
+    volume: "7.2ml",
+    imageUrl: "https://images-static.nykaa.com/media/catalog/product/e/8/e8524d069234925842060_1.jpg?tr=w-500,h-500,cm-pad_resize",
+    description: "Sky High lash impact from every angle! Top rated mascara deal on Amazon."
+  },
+  {
+    id: 6,
+    name: "Lipstick",
+    brand: "M.A.C",
+    subname: "M.A.C Retro Matte Lipstick - Ruby Woo Iconic Vivid Blue-Red",
+    price: 1950,
+    originalPrice: 2200,
+    discount: "11% OFF",
+    rating: 4.9,
+    reviewsCount: 8420,
+    badge: "Iconic Deal",
+    category: "Lipstick",
+    platform: "Amazon",
+    affiliateUrl: "https://www.amazon.in/s?k=MAC+Ruby+Woo+Lipstick",
+    volume: "3.0g",
+    imageUrl: "https://images-static.nykaa.com/media/catalog/product/0/e/0e86b20773602052448_0.jpg?tr=w-500,h-500,cm-pad_resize",
+    description: "The world's most famous blue-red lipstick. Special price on Amazon."
+  },
+  {
+    id: 7,
+    name: "Foundation",
+    brand: "Lakmé",
+    subname: "Lakme 9to5 Primer + Matte Perfect Cover Foundation SPF 20",
+    price: 475,
+    originalPrice: 550,
+    discount: "14% OFF",
+    rating: 4.6,
+    reviewsCount: 5210,
+    badge: "Flipkart Assured",
+    category: "Foundation",
+    platform: "Flipkart",
+    affiliateUrl: "https://www.flipkart.com/search?q=Lakme+9to5+Primer+Matte+Cover+Foundation",
+    volume: "25ml",
+    imageUrl: "https://images-static.nykaa.com/media/catalog/product/9/b/9b9f91124409_H-8901030742514.jpg?tr=w-500,h-500,cm-pad_resize",
+    description: "Built-in primer ensures seamless blending, hides blemishes on Flipkart."
+  },
+  {
+    id: 8,
+    name: "Skincare",
+    brand: "Minimalist",
+    subname: "Minimalist 10% Niacinamide Face Serum with Zinc for Blemishes & Oil Control",
+    price: 569,
+    originalPrice: 599,
+    discount: "5% OFF",
+    rating: 4.8,
+    reviewsCount: 14200,
+    badge: "Amazon's Choice",
+    category: "Skincare",
+    platform: "Amazon",
+    affiliateUrl: "https://www.amazon.in/s?k=Minimalist+10%25+Niacinamide+Face+Serum",
+    volume: "30ml",
+    imageUrl: "https://images-static.nykaa.com/media/catalog/product/7/0/70ee91fMINIM00000001_1.jpg?tr=w-500,h-500,cm-pad_resize",
+    description: "Nourishing daily serum packed with pure Vitamin B3. Lightning deal on Amazon."
+  }
+];
+
+export const heroCarouselData = [
+  {
+    id: 1,
+    title: "Best Amazon & Flipkart Beauty Deals",
+    subtitle: "Up to 50% OFF Top Brand Lipsticks & Skincare — Verified Direct Links",
+    tag: "Verified Affiliate Deals",
+    code: "BESTDEAL",
+    buttonText: "Browse Top Deals",
+    image: "https://images-static.nykaa.com/uploads/dd133d2a-9b0e-411d-ab27-f189fab8cfa0.jpg?tr=cm-pad_resize,w-1400",
+    bgColor: "from-rose-950 via-pink-900 to-amber-950"
+  },
+  {
+    id: 2,
+    title: "Trending on Amazon Beauty",
+    subtitle: "Kay Beauty, Maybelline & L'Oreal at Lowest Online Prices",
+    tag: "Amazon Deals",
+    code: "AMAZON50",
+    buttonText: "View Amazon Deals",
+    image: "https://images-static.nykaa.com/creatives/a2cb3bd1-b47b-4fbf-8b1d-6a94032e7bac/default.jpg?tr=cm-pad_resize,w-1400",
+    bgColor: "from-fuchsia-950 via-rose-900 to-stone-900"
+  },
+  {
+    id: 3,
+    title: "Flipkart Big Beauty Festive Picks",
+    subtitle: "Handpicked Genuine Cosmetics with Extra Bank Discounts",
+    tag: "Flipkart Deals",
+    code: "FLIPKART",
+    buttonText: "View Flipkart Deals",
+    image: "https://images-static.nykaa.com/creatives/d942f143-f56f-40b0-9ea6-54216d2f3869/default.jpg?tr=cm-pad_resize,w-1400",
+    bgColor: "from-indigo-950 via-purple-900 to-pink-950"
+  }
+];
+
+export const promoCategories = [
+  {
+    id: 1,
+    title: "Amazon Bestsellers",
+    subtitle: "Direct links with prime fast delivery",
+    discount: "Up to 40% OFF",
+    tag: "Amazon Exclusive",
+    categoryFilter: "Lipstick",
+    platformFilter: "Amazon",
+    image: "https://images.freekaamaal.com/post_images/1591680218.jpg"
+  },
+  {
+    id: 2,
+    title: "Flipkart Super Deals",
+    subtitle: "Budget beauty & multipack combos",
+    discount: "Buy 1 Get 1 Free",
+    tag: "Flipkart Assured",
+    categoryFilter: "Lip Liner",
+    platformFilter: "Flipkart",
+    image: "https://images-static.nykaa.com/creatives/a2cb3bd1-b47b-4fbf-8b1d-6a94032e7bac/default.jpg?tr=cm-pad_resize,w-600"
+  },
+  {
+    id: 3,
+    title: "Viral Eye & Mascara Deals",
+    subtitle: "Waterproof & lengthening hits",
+    discount: "Flat 25% OFF",
+    tag: "Top Rated",
+    categoryFilter: "Mascara",
+    platformFilter: "All",
+    image: "https://images-static.nykaa.com/creatives/d942f143-f56f-40b0-9ea6-54216d2f3869/default.jpg?tr=cm-pad_resize,w-600"
+  }
+];
