@@ -111,7 +111,7 @@ export default function Navbar() {
         {/* Main Navbar */}
         <nav className="bg-white/95 backdrop-blur-md border-b border-rose-100/80 shadow-xs">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-4">
-            
+
             {/* Mobile Menu Button */}
             <div className="flex items-center md:hidden">
               <button
@@ -155,11 +155,10 @@ export default function Navbar() {
               <li>
                 <button
                   onClick={() => handlePlatformClick("Amazon")}
-                  className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all flex items-center gap-1 border ${
-                    activePlatform === "Amazon"
+                  className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all flex items-center gap-1 border ${activePlatform === "Amazon"
                       ? "bg-amber-500 text-black border-amber-600 shadow-xs"
                       : "bg-amber-50 text-amber-900 border-amber-200 hover:bg-amber-100"
-                  }`}
+                    }`}
                 >
                   <FaBolt className="text-[10px] text-amber-700" /> Amazon Deals
                 </button>
@@ -167,11 +166,10 @@ export default function Navbar() {
               <li>
                 <button
                   onClick={() => handlePlatformClick("Flipkart")}
-                  className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all flex items-center gap-1 border ${
-                    activePlatform === "Flipkart"
+                  className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all flex items-center gap-1 border ${activePlatform === "Flipkart"
                       ? "bg-blue-600 text-white border-blue-700 shadow-xs"
                       : "bg-blue-50 text-blue-900 border-blue-200 hover:bg-blue-100"
-                  }`}
+                    }`}
                 >
                   <FaBolt className="text-[10px] text-blue-600" /> Flipkart Deals
                 </button>
@@ -225,9 +223,8 @@ export default function Navbar() {
                           />
                           <div className="min-w-0">
                             <div className="flex items-center gap-1.5">
-                              <span className={`text-[10px] font-extrabold uppercase px-1.5 py-0.2 rounded ${
-                                product.platform === 'Flipkart' ? 'bg-blue-100 text-blue-800' : 'bg-amber-100 text-amber-900'
-                              }`}>
+                              <span className={`text-[10px] font-extrabold uppercase px-1.5 py-0.2 rounded ${product.platform === 'Flipkart' ? 'bg-blue-100 text-blue-800' : 'bg-amber-100 text-amber-900'
+                                }`}>
                                 {product.platform || 'Amazon'}
                               </span>
                               <span className="text-xs font-bold text-gray-900 truncate">
@@ -256,14 +253,6 @@ export default function Navbar() {
               >
                 <FaSearch className="text-base" />
               </button>
-
-              <Link
-                to="/admin"
-                className="flex items-center gap-2 bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-700 hover:to-rose-800 text-white px-4 py-2 sm:py-2.5 rounded-full font-bold text-xs sm:text-sm shadow-md shadow-rose-200 transition-all hover:scale-105 active:scale-95"
-              >
-                <FaStore className="text-sm" />
-                <span>Admin Panel</span>
-              </Link>
             </div>
           </div>
 
@@ -290,35 +279,32 @@ export default function Navbar() {
               <span className="text-gray-400 flex items-center gap-1 font-semibold uppercase text-[11px] tracking-wider shrink-0 mr-1">
                 <FaTag className="text-rose-500 text-xs" /> Platform:
               </span>
-              
+
               {/* Platform Pills */}
               <button
                 onClick={() => handlePlatformClick("All")}
-                className={`px-3 py-1 rounded-full font-bold transition-all shrink-0 ${
-                  activePlatform === "All"
+                className={`px-3 py-1 rounded-full font-bold transition-all shrink-0 ${activePlatform === "All"
                     ? "bg-gray-900 text-white"
                     : "bg-white text-gray-700 border border-gray-200 hover:border-gray-400"
-                }`}
+                  }`}
               >
                 All Platforms
               </button>
               <button
                 onClick={() => handlePlatformClick("Amazon")}
-                className={`px-3 py-1 rounded-full font-bold transition-all shrink-0 flex items-center gap-1 ${
-                  activePlatform === "Amazon"
+                className={`px-3 py-1 rounded-full font-bold transition-all shrink-0 flex items-center gap-1 ${activePlatform === "Amazon"
                     ? "bg-amber-500 text-black shadow-xs"
                     : "bg-white text-amber-900 border border-amber-200 hover:bg-amber-50"
-                }`}
+                  }`}
               >
                 Amazon
               </button>
               <button
                 onClick={() => handlePlatformClick("Flipkart")}
-                className={`px-3 py-1 rounded-full font-bold transition-all shrink-0 flex items-center gap-1 ${
-                  activePlatform === "Flipkart"
+                className={`px-3 py-1 rounded-full font-bold transition-all shrink-0 flex items-center gap-1 ${activePlatform === "Flipkart"
                     ? "bg-blue-600 text-white shadow-xs"
                     : "bg-white text-blue-900 border border-blue-200 hover:bg-blue-50"
-                }`}
+                  }`}
               >
                 Flipkart
               </button>
@@ -330,11 +316,10 @@ export default function Navbar() {
                 <button
                   key={cat}
                   onClick={() => handleCategoryClick(cat)}
-                  className={`px-3 py-1 rounded-full transition-all shrink-0 ${
-                    activeCategory === cat
+                  className={`px-3 py-1 rounded-full transition-all shrink-0 ${activeCategory === cat
                       ? "bg-rose-600 text-white font-bold shadow-xs"
                       : "bg-white text-gray-700 border border-gray-200 hover:border-rose-400"
-                  }`}
+                    }`}
                 >
                   {cat === "All" ? "✨ All" : cat}
                 </button>
@@ -412,11 +397,10 @@ export default function Navbar() {
                     <button
                       key={cat}
                       onClick={() => handleCategoryClick(cat)}
-                      className={`text-left text-xs font-medium px-3 py-2 rounded-lg border ${
-                        activeCategory === cat
+                      className={`text-left text-xs font-medium px-3 py-2 rounded-lg border ${activeCategory === cat
                           ? "bg-rose-600 text-white border-rose-600"
                           : "border-gray-200 text-gray-700 hover:bg-rose-50"
-                      }`}
+                        }`}
                     >
                       {cat}
                     </button>

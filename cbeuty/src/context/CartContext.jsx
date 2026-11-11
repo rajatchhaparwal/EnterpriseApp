@@ -23,11 +23,13 @@ export function CartProvider({ children }) {
   const [activeCategory, setActiveCategory] = useState('All');
   const [activePlatform, setActivePlatform] = useState('All'); // 'All' | 'Amazon' | 'Flipkart'
 
+  const API_BASE = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? '' : 'http://localhost:3000');
+
   // Sync with backend API if available
   useEffect(() => {
     const fetchBackendProducts = async () => {
       try {
-        const res = await fetch('http://localhost:3000/api/productData');
+        const res = await fetch(`${API_BASE}/api/productData`);
         if (res.ok) {
           const data = await res.json();
           if (Array.isArray(data) && data.length > 0) {
@@ -43,7 +45,7 @@ export function CartProvider({ children }) {
       }
     };
     fetchBackendProducts();
-  }, []);
+  }, [API_BASE]);
 
   // Save to localStorage whenever products change
   const persistProducts = (updated) => {
@@ -80,7 +82,7 @@ export function CartProvider({ children }) {
 
     // Also push to backend if available
     try {
-      await fetch('http://localhost:3000/api/products', {
+      await fetch(`${API_BASE}/api/products`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(productWithId)
@@ -98,7 +100,7 @@ export function CartProvider({ children }) {
     showToast('Product removed from catalog', 'info');
 
     try {
-      await fetch(`http://localhost:3000/api/products/${id}`, {
+      await fetch(`${API_BASE}/api/products/${id}`, {
         method: 'DELETE'
       });
     } catch (e) {

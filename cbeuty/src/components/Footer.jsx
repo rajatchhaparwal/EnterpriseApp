@@ -31,10 +31,10 @@ function Footer() {
   return (
     <footer className="bg-stone-900 text-gray-300 pt-16 pb-24 md:pb-12 mt-20 border-t border-stone-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Main 4-column grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-          
+
           {/* Column 1: Brand & Affiliate Disclosure */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
@@ -125,10 +125,10 @@ function Footer() {
                 href="mailto:contact@shraddhaenterprise.com"
                 className="flex items-center gap-2 hover:text-rose-400 transition-colors"
               >
-                <FaEnvelope className="text-rose-500" /> contact@shraddhaenterprise.com
+                <FaEnvelope className="text-rose-500" /> rajatchhaparwal12@gmail.com
               </a>
               <div className="flex items-center gap-2">
-                <FaPhoneAlt className="text-rose-500" /> +91 98765 43210
+                <FaPhoneAlt className="text-rose-500" /> +91 9406775552
               </div>
             </div>
 
@@ -168,7 +168,7 @@ function Footer() {
         {/* Divider */}
         <div className="border-t border-stone-800 pt-8 mt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
           <p className="flex items-center gap-1 text-center md:text-left">
-            © {new Date().getFullYear()} Shraddha Enterprise. All product logos & trademarks belong to their respective owners (Amazon, Flipkart).
+            © {new Date().getFullYear()} Shraddha Enterprise
           </p>
 
           <div className="flex items-center gap-2 text-xs">

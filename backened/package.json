@@ -1,0 +1,17 @@
+{
+  "name": "backened",
+  "version": "1.0.0",
+  "description": "this is backened for cbeuty ",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "pg": "^8.23.1"
+  }
+}
