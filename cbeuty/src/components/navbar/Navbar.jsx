@@ -246,6 +246,13 @@ export default function Navbar() {
 
             {/* Right Action Icons: Admin Portal Button */}
             <div className="flex items-center space-x-2">
+              <Link
+                to="/admin"
+                className="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-stone-900 text-white hover:bg-rose-600 transition-colors shadow-xs"
+                title="Admin Dashboard"
+              >
+                <FaStore className="text-xs" /> Admin
+              </Link>
               <button
                 onClick={() => setSearchOpen(!searchOpen)}
                 className="md:hidden p-2 text-gray-700 hover:text-rose-600 rounded-full hover:bg-rose-50"
